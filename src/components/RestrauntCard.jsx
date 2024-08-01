@@ -3,7 +3,7 @@ import React from "react";
 
 const RestrauntCard=(props)=>{
     return(
-        <div className="card w-60 p-2 m-2 shadow-lg bg-pink-100 hover:bg-pink-500">
+        <div className="my-4 card w-60 mx-auto p-2 h-[450px] shadow-lg bg-pink-100 hover:bg-pink-500">
             <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
              +props.rest.cloudinaryImageId}/>
             <h2 className="font-bold">{props.rest.name}</h2>            
