@@ -59,15 +59,8 @@ export const Body = () => {
             >
               Search
             </button>
-
-            <input
-              value={user.name}
-              onChange={(e) =>
-                setUser({ name: e.target.value, email: "newemail@gmail.com" })
-              }
-            ></input>
           </div>
-          <div className="restraunt-list flex flex-wrap">
+          <div className="restraunt-list flex flex-wrap w-[80%] mx-auto">
             {filterRestra?.map((c) => {
               return (
                 <Link key={c.info.id} to={"/restaurant/" + c.info.id}>
