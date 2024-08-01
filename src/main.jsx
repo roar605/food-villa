@@ -16,7 +16,8 @@ import store from "./utilities/store";
 import Cart from "./components/Cart";
 
 const Instamart =lazy(()=>import("./components/Instamart"))
-
+// this is in dev branch
+// we are in dev branch
 const AppLayout = () => {
     const [user,setUser]=useState({
         name:"Rohit Kumar Singh",
