@@ -38,19 +38,21 @@ export const Body = () => {
         <Shimmer />
       ) : (
         <div>
-          <div className="p-5 my-5 bg-pink-100">
+          <div className="p-5 my-5 bg-blue-100 mx-auto flex justify-center">
             <input
               type="text"
-              className="search-input p-2"
+              className="search-input p-2 w-[70%] "
               placeholder="Search Restraunts"
               name="inbox"
               value={searchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
+                const data = filterData(searchText, allRestra);
+                setFilterRestra(data);
               }}
             ></input>
             <button
-              className="bg-purple-500 m-1 p-2 text-white rounded hover:bg-purple-700"
+              className="bg-blue-500 m-1 p-2 text-white rounded hover:bg-blue-700"
               onClick={() => {
                 //Filter the restaurants list
                 const data = filterData(searchText, allRestra);
@@ -60,7 +62,7 @@ export const Body = () => {
               Search
             </button>
           </div>
-          <div className="restraunt-list flex flex-wrap w-[80%] mx-auto">
+          <div className="restraunt-list flex flex-wrap w-[80%] gap-8 mx-auto">
             {filterRestra?.map((c) => {
               return (
                 <Link key={c.info.id} to={"/restaurant/" + c.info.id}>
