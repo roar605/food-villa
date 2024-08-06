@@ -19,7 +19,7 @@ const Header = () => {
     <nav class="bg-white dark:bg-gray-900 p-4  w-full border-b border-gray-200 dark:border-gray-600">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
         <div className="flex">
-          <img src="../assets/logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+          <img src="../src/assets/logo.png" class="h-8 me-3" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             FoodVilla
           </span>

@@ -23,7 +23,7 @@ const RestaurantMenu = () => {
         {menuItems.map((data) => (
           <ul className="m-1 bg-blue-50 p-4 h-[300px] border rounded-lg">
             <img
-              src={`../assets/${data.image}`}
+              src={`../src/assets/${data.image}`}
               className="h-[70%] w-full object-fill"
             />
             <div className="flex justify-between my-3">
