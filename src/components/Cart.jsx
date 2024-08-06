@@ -29,7 +29,7 @@ const Cart = () => {
           <ul className="border-4 h-[400px] m-2">
             <div className="">
               <img
-                src={`../assets/${item.image}`}
+                src={`../src/assets/${item.image}`}
                 className="h-[300px] w-full object-fill"
               />
             </div>
