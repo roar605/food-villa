@@ -4,6 +4,7 @@ import { Shimmer } from "./Shimmer";
 import { filterData } from "../utilities/helper";
 import userContext from "../utilities/userContext";
 import { Link } from "react-router-dom";
+import Cart from "./Cart";
 
 export const Body = () => {
   const [searchText, setSearchText] = useState("");
@@ -70,6 +71,9 @@ export const Body = () => {
                 </Link>
               );
             })}
+          </div>
+          <div>
+            <Cart/>
           </div>
         </div>
       )}
